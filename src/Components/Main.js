@@ -26,7 +26,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D",
       title: "React Hero",
       author: "John Doe",
       likes: 120,
@@ -37,7 +37,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
       title: "Angular Power",
       author: "Alice Smith",
       likes: 85,
@@ -48,7 +48,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww",
       title: "Vue Mastery",
       author: "Michael Brown",
       likes: 95,
@@ -59,7 +59,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww",
       title: "Bootstrap Bliss",
       author: "Emma Johnson",
       likes: 75,
@@ -70,7 +70,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1484417894907-623942c8ee29?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww",
       title: "Svelte Magic",
       author: "David Williams",
       likes: 110,
@@ -81,7 +81,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVhY3R8ZW58MHx8MHx8fDA%3D",
       title: "jQuery Legends",
       author: "Sophia Garcia",
       likes: 70,
@@ -92,7 +92,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://plus.unsplash.com/premium_photo-1678565202188-f69b2e593998?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww",
       title: "Ember Enigma",
       author: "Daniel Lee",
       likes: 80,
@@ -103,7 +103,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
       title: "CSS Wizardry",
       author: "Lily Clark",
       likes: 105,
@@ -114,7 +114,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
       title: "HTML Heroes",
       author: "Matthew Wilson",
       likes: 88,
@@ -125,7 +125,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://plus.unsplash.com/premium_photo-1678565999332-1cde462f7b24?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJlYWN0fGVufDB8fDB8fHww",
       title: "TypeScript Treasures",
       author: "Sophie Brown",
       likes: 92,
@@ -136,7 +136,7 @@ const Main = () => {
     },
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNvbXB1dGVyJTIwc2NpZW5jZXxlbnwwfHwwfHx8MA%3D%3D",
       title: "Django Delights",
       author: "Lucas Green",
       likes: 78,
