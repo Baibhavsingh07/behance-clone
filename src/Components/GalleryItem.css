@@ -1,9 +1,7 @@
-/* GalleryItem.css */
-
 .gallery-item {
   position: relative;
   cursor: pointer;
-  overflow: hidden; /* Ensure images do not overflow */
+  overflow: hidden;
 }
 
 .gallery-item img {
@@ -13,7 +11,7 @@
 }
 
 .gallery-item:hover img {
-  transform: scale(1.05); /* Scale up on hover */
+  transform: scale(1.05);
 }
 
 .info {
@@ -21,11 +19,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 8px;
   transition: opacity 0.3s ease-in-out;
-  opacity: 0; /* Hidden by default */
+  opacity: 0;
 }
 
 .gallery-item:hover .info {
@@ -49,7 +47,7 @@
 }
 
 .info .like-btn {
-  background-color: #ff6347; /* Coral color */
+  background-color: #ff6347;
   color: white;
   border: none;
   padding: 4px 8px;

@@ -1,5 +1,3 @@
-// TopBar.js
-
 import React, { useState } from "react";
 import "./TopBar.css";
 
@@ -9,6 +7,7 @@ const TopBar = ({
   suggestions,
   handleInputChange,
   handleSuggestionClick,
+  setSelectedFilter,
 }) => {
   return (
     <div className="top-bar">
@@ -33,7 +32,12 @@ const TopBar = ({
         )}
       </div>
       <button className="search-image-btn">Search by Image</button>
-      <select id="sort" className="sort-dropdown">
+      <select
+        id="sort"
+        className="sort-dropdown"
+        onChange={(e) => setSelectedFilter(e.target.value)}
+      >
+        <option value="">None</option>
         <option value="recommended">Recommended</option>
         <option value="liked">Most Liked</option>
         <option value="viewed">Most Viewed</option>

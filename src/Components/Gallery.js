@@ -1,5 +1,3 @@
-// Gallery.js
-
 import React from "react";
 import GalleryItem from "./GalleryItem";
 import "./Gallery.css";

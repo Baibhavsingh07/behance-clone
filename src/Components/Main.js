@@ -1,5 +1,3 @@
-// Main.js
-
 import React, { useState } from "react";
 import TopBar from "./TopBar";
 import Gallery from "./Gallery";
@@ -12,6 +10,7 @@ const Main = () => {
   const [modalImage, setModalImage] = useState("");
   const [modalCaption, setModalCaption] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState(null); // New state for selected filter
 
   const galleryItems = [
     {
@@ -148,6 +147,22 @@ const Main = () => {
     },
   ];
 
+  // Function to handle sorting based on selectedFilter
+  const sortGalleryItems = (items) => {
+    switch (selectedFilter) {
+      case "recommended":
+        return items.filter((item) => item.recommended);
+      case "liked":
+        return items.slice().sort((a, b) => b.likes - a.likes);
+      case "viewed":
+        return items.slice().sort((a, b) => b.views - a.views);
+      case "recent":
+        return items.slice().sort((a, b) => b.timeCreated - a.timeCreated);
+      default:
+        return items;
+    }
+  };
+
   const openModal = (imgSrc, caption) => {
     setModalVisible(true);
     setModalImage(imgSrc);
@@ -183,26 +198,32 @@ const Main = () => {
         suggestions={suggestions}
         handleInputChange={handleInputChange}
         handleSuggestionClick={handleSuggestionClick}
+        setSelectedFilter={setSelectedFilter} // Pass setSelectedFilter to TopBar
       />
       <Gallery
-        galleryItems={galleryItems.filter((item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase())
+        galleryItems={sortGalleryItems(
+          galleryItems.filter((item) =>
+            item.title.toLowerCase().includes(searchTerm.toLowerCase())
+          )
         )}
         openModal={openModal}
       />
-      {galleryItems
-        .filter((item) =>
-          item.title.toLowerCase().includes(searchTerm.toLowerCase())
-        )
-        .map((item, index) => (
-          <Modal
-            key={index}
-            modalVisible={modalVisible && modalImage === item.imgSrc}
-            closeModal={closeModal}
-            modalImage={modalImage}
-            modalCaption={modalCaption}
-          />
-        ))}
+
+      {galleryItems &&
+        galleryItems
+          .filter((item) =>
+            item.title.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+          ?.map((item, index) => (
+            <Modal
+              key={index}
+              modalVisible={modalVisible && modalImage === item.imgSrc}
+              closeModal={closeModal}
+              modalImage={modalImage}
+              modalCaption={modalCaption}
+              item={item}
+            />
+          ))}
     </main>
   );
 };
