@@ -10,7 +10,7 @@ const Main = () => {
   const [modalImage, setModalImage] = useState("");
   const [modalCaption, setModalCaption] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-  const [selectedFilter, setSelectedFilter] = useState(null); // New state for selected filter
+  const [selectedFilter, setSelectedFilter] = useState(null);
 
   const galleryItems = [
     {
@@ -21,7 +21,7 @@ const Main = () => {
       likes: 68,
       views: 880,
       category: "Javascript",
-      timeCreated: 1624263600000, // Example timestamp for July 2021
+      timeCreated: 1624263600000,
       recommended: true,
     },
     {
@@ -32,7 +32,7 @@ const Main = () => {
       likes: 120,
       views: 1050,
       category: "React",
-      timeCreated: 1630380000000, // Example timestamp for September 2021
+      timeCreated: 1630380000000,
       recommended: false,
     },
     {
@@ -43,7 +43,7 @@ const Main = () => {
       likes: 85,
       views: 920,
       category: "Angular",
-      timeCreated: 1635765600000, // Example timestamp for November 2021
+      timeCreated: 1635765600000,
       recommended: true,
     },
     {
@@ -54,7 +54,7 @@ const Main = () => {
       likes: 95,
       views: 1000,
       category: "Vue",
-      timeCreated: 1640991600000, // Example timestamp for January 2022
+      timeCreated: 1640991600000,
       recommended: false,
     },
     {
@@ -65,7 +65,7 @@ const Main = () => {
       likes: 75,
       views: 890,
       category: "Bootstrap",
-      timeCreated: 1647942000000, // Example timestamp for March 2022
+      timeCreated: 1647942000000,
       recommended: true,
     },
     {
@@ -76,7 +76,7 @@ const Main = () => {
       likes: 110,
       views: 980,
       category: "Svelte",
-      timeCreated: 1650932400000, // Example timestamp for May 2022
+      timeCreated: 1650932400000,
       recommended: false,
     },
     {
@@ -87,7 +87,7 @@ const Main = () => {
       likes: 70,
       views: 910,
       category: "jQuery",
-      timeCreated: 1656130800000, // Example timestamp for July 2022
+      timeCreated: 1656130800000,
       recommended: true,
     },
     {
@@ -98,7 +98,7 @@ const Main = () => {
       likes: 80,
       views: 930,
       category: "Ember",
-      timeCreated: 1661094000000, // Example timestamp for September 2022
+      timeCreated: 1661094000000,
       recommended: false,
     },
     {
@@ -109,7 +109,7 @@ const Main = () => {
       likes: 105,
       views: 970,
       category: "CSS",
-      timeCreated: 1666825200000, // Example timestamp for November 2022
+      timeCreated: 1666825200000,
       recommended: true,
     },
     {
@@ -120,7 +120,7 @@ const Main = () => {
       likes: 88,
       views: 940,
       category: "HTML",
-      timeCreated: 1672158000000, // Example timestamp for January 2023
+      timeCreated: 1672158000000,
       recommended: false,
     },
     {
@@ -131,7 +131,7 @@ const Main = () => {
       likes: 92,
       views: 960,
       category: "Typescript",
-      timeCreated: 1677068400000, // Example timestamp for March 2023
+      timeCreated: 1677068400000,
       recommended: true,
     },
     {
@@ -142,12 +142,11 @@ const Main = () => {
       likes: 78,
       views: 900,
       category: "Django",
-      timeCreated: 1681498800000, // Example timestamp for May 2023
+      timeCreated: 1681498800000,
       recommended: false,
     },
   ];
 
-  // Function to handle sorting based on selectedFilter
   const sortGalleryItems = (items) => {
     switch (selectedFilter) {
       case "recommended":
@@ -177,7 +176,6 @@ const Main = () => {
     const value = e.target.value;
     setSearchTerm(value);
 
-    // Filter suggestions based on input value
     const filteredSuggestions = galleryItems.filter((item) =>
       item.title.toLowerCase().includes(value.toLowerCase())
     );
@@ -198,7 +196,7 @@ const Main = () => {
         suggestions={suggestions}
         handleInputChange={handleInputChange}
         handleSuggestionClick={handleSuggestionClick}
-        setSelectedFilter={setSelectedFilter} // Pass setSelectedFilter to TopBar
+        setSelectedFilter={setSelectedFilter}
       />
       <Gallery
         galleryItems={sortGalleryItems(

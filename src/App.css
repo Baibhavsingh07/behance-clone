@@ -1,23 +1,20 @@
-/* App.css */
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #f8f8f8;
-  overflow-x: hidden; /* Remove horizontal scroll */
 }
 
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the layout takes at least the full viewport height */
+  min-height: 100vh;
 }
 
 .App main {
   margin-top: 10px;
-  overflow-x: hidden; /* Ensure no horizontal scroll on main content */
+  overflow-x: hidden;
 }
 
 .top-bar {
@@ -67,9 +64,13 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   padding: 20px;
-  overflow-x: hidden; /* Ensure no horizontal scroll on gallery */
+  overflow-x: hidden;
 }
 
 .footer {
   margin-top: auto;
+}
+
+* {
+  overflow-x: hidden;
 }

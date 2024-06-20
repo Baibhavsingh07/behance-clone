@@ -1,8 +1,6 @@
-// App.js
-
 import React from "react";
 import Header from "./Components/Header";
-import Main from "./Components/Main"; // Assuming Main component also needs to be rendered
+import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 
 function App() {

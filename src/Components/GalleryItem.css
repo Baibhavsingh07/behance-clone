@@ -27,7 +27,7 @@
 }
 
 .gallery-item:hover .info {
-  opacity: 1; /* Show info on hover */
+  opacity: 1;
 }
 
 .info .title {

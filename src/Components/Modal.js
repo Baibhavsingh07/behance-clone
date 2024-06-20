@@ -31,10 +31,9 @@ const Modal = ({
   );
 };
 
-// Function to format timestamp to readable date
 const formatTime = (timestamp) => {
   const date = new Date(timestamp);
-  return date.toLocaleDateString(); // Adjust format as needed
+  return date.toLocaleDateString();
 };
 
 export default Modal;
