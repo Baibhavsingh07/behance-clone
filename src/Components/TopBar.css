@@ -1,0 +1,89 @@
+/* TopBar.css */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid hsl(0, 0%, 80%);
+  width: 100%;
+  margin: 0;
+}
+
+.filter-btn,
+.search-image-btn {
+  padding: 8px 16px;
+  margin-right: 10px;
+  font-size: 14px;
+  background-color: #1126e4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  width: 10%;
+}
+
+.filter-btn:hover {
+  background-color: #0a1ba1;
+  transition: background-color 0.3s ease;
+}
+
+.search-image-btn:hover {
+  background-color: #0a1ba1;
+  transition: background-color 0.3s ease;
+}
+
+button:active {
+  transform: translateY(20%);
+}
+
+#search {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+#sort {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 2%;
+}
+
+.autocomplete {
+  position: relative;
+  width: 100%;
+  margin-right: 4.5%;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%; /* Position suggestions below input */
+  left: 0;
+  z-index: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}

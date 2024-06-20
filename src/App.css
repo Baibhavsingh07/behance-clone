@@ -1,38 +1,75 @@
+/* App.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  overflow-x: hidden; /* Remove horizontal scroll */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh; /* Ensure the layout takes at least the full viewport height */
+}
+
+.App main {
+  margin-top: 10px;
+  overflow-x: hidden; /* Ensure no horizontal scroll on main content */
+}
+
+.top-bar {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.filter-btn,
+.search-image-btn {
+  background-color: #1126e4;
+  border: none;
   color: white;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.filter-btn:hover,
+.search-image-btn:hover {
+  background-color: #0a1ba1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  min-width: 200px;
+}
+
+#sort {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  overflow-x: hidden; /* Ensure no horizontal scroll on gallery */
+}
+
+.footer {
+  margin-top: auto;
 }

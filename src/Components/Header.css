@@ -1,0 +1,135 @@
+/* Header.css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+nav a:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.bell,
+.login,
+.signup {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.bell {
+  font-size: 20px;
+}
+
+.signup {
+  background-color: #1126e4;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20x;
+}
+
+.signup:hover {
+  background-color: white;
+  color: black;
+  transition: 500ms;
+}
+
+button:active {
+  transform: translateY(20%);
+}
+
+.adobe-logo {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-left nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-left.active nav {
+    display: flex;
+  }
+
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .nav-right .signup {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .nav-right button,
+  .nav-right .adobe-logo {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .nav-right .signup {
+    padding: 5px 8px;
+    font-size: 14px;
+  }
+}

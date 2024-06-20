@@ -1,0 +1,62 @@
+/* GalleryItem.css */
+
+.gallery-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; /* Ensure images do not overflow */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 8px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0; /* Hidden by default */
+}
+
+.gallery-item:hover .info {
+  opacity: 1; /* Show info on hover */
+}
+
+.info .title {
+  font-weight: bold;
+}
+
+.info .author {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.info .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.info .like-btn {
+  background-color: #ff6347; /* Coral color */
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.info .views {
+  font-size: 12px;
+}
