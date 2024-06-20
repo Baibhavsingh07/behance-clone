@@ -15,7 +15,7 @@ const Main = () => {
   const galleryItems = [
     {
       imgSrc:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOtxT5HXwgohzcdupToyBdnb27h4LlW1sexA&s",
+        "https://images.unsplash.com/photo-1687603926059-70c086f6c626?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG5vZGVqc3xlbnwwfHwwfHx8MA%3D%3D",
       title: "JS Clock",
       author: "Olivia Martinez",
       likes: 68,
